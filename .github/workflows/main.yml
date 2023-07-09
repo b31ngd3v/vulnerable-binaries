@@ -1,0 +1,15 @@
+name: CVE Binary Tool Scanner
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 2 * * *'
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: b31ngd3v/cve-bin-tool-action@fix_pr_report
+        with:
+          nvd_api_key: '${{ secrets.NVD_API_KEY }}'
+          exclude_dir: binary
