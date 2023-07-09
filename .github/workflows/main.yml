@@ -5,6 +5,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '20 2 * * *'
+
+permissions:
+  security-events: write
+
 jobs:
   scan:
     runs-on: ubuntu-latest
