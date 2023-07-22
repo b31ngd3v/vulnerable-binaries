@@ -18,4 +18,4 @@ jobs:
           nvd_api_key: '${{ secrets.NVD_API_KEY }}'
           exclude_dir: binary
           sbom_type: spdx
-          sbom_format: ds
+          sbom_format: json
