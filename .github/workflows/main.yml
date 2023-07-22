@@ -17,5 +17,5 @@ jobs:
         with:
           nvd_api_key: '${{ secrets.NVD_API_KEY }}'
           exclude_dir: binary
-          sbom_type: cyclonedx
-          sbom_format: json
+          sbom_type: spdx
+          sbom_format: yaml
