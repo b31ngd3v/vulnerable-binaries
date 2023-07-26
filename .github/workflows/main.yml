@@ -19,3 +19,4 @@ jobs:
           exclude_dir: binary
           sbom_type: spdx
           sbom_format: json
+      - run: ls -lA
