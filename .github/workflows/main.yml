@@ -13,7 +13,7 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     steps:
-      - uses: b31ngd3v/cve-bin-tool-action@sbom_config
+      - uses: intel/cve-bin-tool-action@main
         with:
           nvd_api_key: '${{ secrets.NVD_API_KEY }}'
           exclude_dir: binary
