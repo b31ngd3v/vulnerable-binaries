@@ -21,4 +21,5 @@ jobs:
           exclude_dir: binary
           sbom_type: spdx
           sbom_format: json
+          alerts_based_on_file: true
       - run: ls -lA
