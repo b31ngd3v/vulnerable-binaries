@@ -5,6 +5,7 @@ beautifulsoup4
 aiohttp[speedups]>=3.7.4
 toml
 pyyaml>=5.4
+Sphinx==4.5.0
 jsonschema>=3.0.2
 rpmfile>=1.0.6
 zstandard; python_version >= "3.4"
