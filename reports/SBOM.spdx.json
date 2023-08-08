@@ -6,12 +6,12 @@
     "creators": [
       "Tool: cve-bin-tool-3.2.2dev0"
     ],
-    "created": "2023-08-08T06:58:02Z",
+    "created": "2023-08-08T07:03:58Z",
     "licenseListVersion": "3.21"
   },
   "name": "SBOM_CVEBINTOOL-",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/SBOM_CVEBINTOOL--43b2aa3e-be3b-4c66-97eb-936409feef45",
+  "documentNamespace": "http://spdx.org/spdxdocs/SBOM_CVEBINTOOL--c2486f99-50b1-4b46-ad20-38e836cb3832",
   "packages": [
     {
       "SPDXID": "SPDXRef-Package-1-CVEBINTOOL-",
