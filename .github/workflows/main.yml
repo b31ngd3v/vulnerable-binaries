@@ -22,16 +22,3 @@ jobs:
           sbom_type: spdx
           sbom_format: json
           alerts_based_on_file: false
-          
-      - run: |
-          mkdir -p reports
-          mv SBOM.spdx.json reports/SBOM.spdx.json # by default the SBOM file will be stored in the root directory of the repository, in this example the SBOM file is moved to reports directory in the repository
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          commit-message: 'chore: update sbom'
-          title: 'chore: update sbom'
-          branch: chore-update-sbom
-          delete-branch: true
-          author: GitHub <noreply@github.com>
