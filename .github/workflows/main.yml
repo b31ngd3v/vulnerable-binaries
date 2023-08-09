@@ -21,5 +21,4 @@ jobs:
           exclude_dir: binary
           sbom_type: spdx
           sbom_format: json
-          scan_mode: sbom-only
           alerts_based_on_file: false
