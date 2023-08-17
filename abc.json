@@ -1,0 +1,4452 @@
+{
+   "bomFormat": "CycloneDX",
+   "specVersion": "1.4",
+   "version": 1,
+   "vulnerabilities": [
+      {
+         "id": "CVE-2019-11922",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-11922"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2019-11922&vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 8.1,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "A race condition in the one-pass compression functions of Zstandard prior to version 1.3.8 could allow an attacker to write bytes out of bounds if an output buffer smaller than the recommended size was used.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/facebook#zstandard-0.21.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-24031",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-24031"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-24031&vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "In the Zstandard command-line utility prior to v1.4.1, output files were created with default permissions. Correct file permissions (matching the input) would only be set at completion time. Output files could therefore be readable or writable to unintended parties.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/facebook#zstandard-0.21.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-23602",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23602"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-23602&vector=CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N&version=3.1"
+               },
+               "score": 8.1,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+            }
+         ],
+         "description": "Nimforum is a lightweight alternative to Discourse written in Nim. In versions prior to 2.2.0 any forum user can create a new thread/post with an include referencing a file local to the host operating system. Nimforum will render the file if able. This can also be done silently by using NimForum's post \"preview\" endpoint. Even if NimForum is running as a non-critical user, the forum.json secrets can be stolen. Version 2.2.0 of NimForum includes patches for this vulnerability. Users are advised to upgrade as soon as is possible. There are no known workarounds for this issue.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/nim-lang#docutils-0.17.1"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2007-0770",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2007-0770"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2007-0770&vector=AV:N/AC:M/Au:N/C:C/I:C/A:C&version=2.0"
+               },
+               "score": 9.3,
+               "severity": "high",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+            }
+         ],
+         "description": "Buffer overflow in GraphicsMagick and ImageMagick allows user-assisted remote attackers to cause a denial of service and possibly execute arbitrary code via a PALM image that is not properly handled by the ReadPALMImage function in coders/palm.c. NOTE: this issue is due to an incomplete patch for CVE-2006-5456.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/graphicsmagick#graphicsmagick-1.3.38"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2008-6621",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-6621"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2008-6621&vector=AV:N/AC:L/Au:N/C:N/I:N/A:C&version=2.0"
+               },
+               "score": 7.8,
+               "severity": "high",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+            }
+         ],
+         "description": "Unspecified vulnerability in GraphicsMagick before 1.2.3 allows remote attackers to cause a denial of service (crash) via unspecified vectors in DPX images.  NOTE: some of these details are obtained from third party information.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/graphicsmagick#graphicsmagick-1.3.38"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2013-4545",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4545"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2013-4545&vector=AV:N/AC:M/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 4.3,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.18.0 through 7.32.0, when built with OpenSSL, disables the certificate CN and SAN name field verification (CURLOPT_SSL_VERIFYHOST) when the digital signature verification (CURLOPT_SSL_VERIFYPEER) is disabled, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2013-6422",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-6422"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2013-6422&vector=AV:N/AC:H/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 4,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "The GnuTLS backend in libcurl 7.21.4 through 7.33.0, when disabling digital signature verification (CURLOPT_SSL_VERIFYPEER), also disables the CURLOPT_SSL_VERIFYHOST check for CN or SAN host name fields, which makes it easier for remote attackers to spoof servers and conduct man-in-the-middle (MITM) attacks.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-0015",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0015"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-0015&vector=AV:N/AC:H/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 4,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.10.6 through 7.34.0, when more than one authentication method is enabled, re-uses NTLM connections, which might allow context-dependent attackers to authenticate as other users via a request.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-0138",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0138"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-0138&vector=AV:N/AC:L/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 6.4,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "The default configuration in cURL and libcurl 7.10.6 before 7.36.0 re-uses (1) SCP, (2) SFTP, (3) POP3, (4) POP3S, (5) IMAP, (6) IMAPS, (7) SMTP, (8) SMTPS, (9) LDAP, and (10) LDAPS connections, which might allow context-dependent attackers to connect as other users via a request, a similar issue to CVE-2014-0015.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-0139",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0139"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-0139&vector=AV:N/AC:M/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 5.8,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.1 before 7.36.0, when using the OpenSSL, axtls, qsossl or gskit libraries for TLS, recognize a wildcard IP address in the subject's Common Name (CN) field of an X.509 certificate, which might allow man-in-the-middle attackers to spoof arbitrary SSL servers via a crafted certificate issued by a legitimate Certification Authority.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-1263",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-1263"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-1263&vector=AV:N/AC:M/Au:N/C:P/I:N/A:N&version=2.0"
+               },
+               "score": 4.3,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+            }
+         ],
+         "description": "curl and libcurl 7.27.0 through 7.35.0, when using the SecureTransport/Darwinssl backend, as used in in Apple OS X 10.9.x before 10.9.2, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate when accessing a URL that uses a numerical IP address, which allows man-in-the-middle attackers to spoof servers via an arbitrary valid certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-2522",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-2522"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-2522&vector=AV:N/AC:H/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 4,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "curl and libcurl 7.27.0 through 7.35.0, when running on Windows and using the SChannel/Winssl TLS backend, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate when accessing a URL that uses a numerical IP address, which allows man-in-the-middle attackers to spoof servers via an arbitrary valid certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-3613",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3613"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-3613&vector=AV:N/AC:L/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl before 7.38.0 does not properly handle IP addresses in cookie domain names, which allows remote attackers to set cookies for or send arbitrary cookies to certain sites, as demonstrated by a site at 192.168.0.1 setting cookies for a site at 127.168.0.1.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-3620",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3620"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-3620&vector=AV:N/AC:L/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl before 7.38.0 allow remote attackers to bypass the Same Origin Policy and set cookies for arbitrary sites by setting a cookie for a top-level domain.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-3707",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3707"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-3707&vector=AV:N/AC:M/Au:N/C:P/I:N/A:N&version=2.0"
+               },
+               "score": 4.3,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+            }
+         ],
+         "description": "The curl_easy_duphandle function in libcurl 7.17.1 through 7.38.0, when running with the CURLOPT_COPYPOSTFIELDS option, does not properly copy HTTP POST data for an easy handle, which triggers an out-of-bounds read that allows remote web servers to read sensitive memory information.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-8150",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-8150"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-8150&vector=AV:N/AC:M/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 4.3,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "CRLF injection vulnerability in libcurl 6.0 through 7.x before 7.40.0, when using an HTTP proxy, allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via CRLF sequences in a URL.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-8151",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-8151"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-8151&vector=AV:N/AC:M/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 5.8,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "The darwinssl_connect_step1 function in lib/vtls/curl_darwinssl.c in libcurl 7.31.0 through 7.39.0, when using the DarwinSSL (aka SecureTransport) back-end for TLS, does not check if a cached TLS session validated the certificate when reusing the session, which allows man-in-the-middle attackers to spoof servers via a crafted certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2015-3143",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3143"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2015-3143&vector=AV:N/AC:L/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.10.6 through 7.41.0 does not properly re-use NTLM connections, which allows remote attackers to connect as other users via an unauthenticated request, a similar issue to CVE-2014-0015.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2015-3145",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3145"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2015-3145&vector=AV:N/AC:L/Au:N/C:P/I:P/A:P&version=2.0"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+            }
+         ],
+         "description": "The sanitize_cookie_path function in cURL and libcurl 7.31.0 through 7.41.0 does not properly calculate an index, which allows remote attackers to cause a denial of service (out-of-bounds write and crash) or possibly have other unspecified impact via a cookie path containing only a double-quote character.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2015-3148",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3148"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2015-3148&vector=AV:N/AC:L/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.10.6 through 7.41.0 do not properly re-use authenticated Negotiate connections, which allows remote attackers to connect as other users via a request.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2015-3153",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3153"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2015-3153&vector=AV:N/AC:L/Au:N/C:P/I:N/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+            }
+         ],
+         "description": "The default configuration for cURL and libcurl before 7.42.1 sends custom HTTP headers to both the proxy and destination server, which might allow remote proxy servers to obtain sensitive information by reading the header contents.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-0754",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-0754"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-0754&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N&version=3.1"
+               },
+               "score": 5.3,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+            }
+         ],
+         "description": "cURL before 7.47.0 on Windows allows attackers to write to arbitrary files in the current working directory on a different drive via a colon in a remote file name.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-0755",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-0755"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-0755&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L&version=3.1"
+               },
+               "score": 7.3,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+            }
+         ],
+         "description": "The ConnectionExists function in lib/url.c in libcurl before 7.47.0 does not properly re-use NTLM-authenticated proxy connections, which might allow remote attackers to authenticate as other users via a request, a similar issue to CVE-2014-0015.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-3739",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3739"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-3739&vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 5.3,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "The (1) mbed_connect_step1 function in lib/vtls/mbedtls.c and (2) polarssl_connect_step1 function in lib/vtls/polarssl.c in cURL and libcurl before 7.49.0, when using SSLv3 or making a TLS connection to a URL that uses a numerical IP address, allow remote attackers to spoof servers via an arbitrary valid certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-4606",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-4606"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-4606&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "Curl before 7.49.1 in Apple OS X before macOS Sierra prior to 10.12 allows remote or local attackers to execute arbitrary code, gain sensitive information, cause denial-of-service conditions, bypass security restrictions, and perform unauthorized actions. This may aid in other attacks.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-4802",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-4802"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-4802&vector=CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 7.8,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "Multiple untrusted search path vulnerabilities in cURL and libcurl before 7.49.1, when built with SSPI or telnet is enabled, allow local users to execute arbitrary code and conduct DLL hijacking attacks via a Trojan horse (1) security.dll, (2) secur32.dll, or (3) ws2_32.dll in the application or current working directory.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-5419",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-5419"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-5419&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "curl and libcurl before 7.50.1 do not prevent TLS session resumption when the client certificate has changed, which allows remote attackers to bypass intended restrictions by resuming a session.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-5420",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-5420"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-5420&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "curl and libcurl before 7.50.1 do not check the client certificate when choosing the TLS connection to reuse, which might allow remote attackers to hijack the authentication of the connection by leveraging a previously created connection with a different client certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-5421",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-5421"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-5421&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 8.1,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "Use-after-free vulnerability in libcurl before 7.50.1 allows attackers to control which connection is used or possibly have unspecified other impact via unknown vectors.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-7141",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-7141"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-7141&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "curl and libcurl before 7.50.2, when built with NSS and the libnsspem.so library is available at runtime, allow remote attackers to hijack the authentication of a TLS connection by leveraging reuse of a previously loaded client certificate from file for a connection for which no certificate has been set, a different vulnerability than CVE-2016-5420.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-7167",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-7167"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-7167&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "Multiple integer overflows in the (1) curl_escape, (2) curl_easy_escape, (3) curl_unescape, and (4) curl_easy_unescape functions in libcurl before 7.50.3 allow attackers to have unspecified impact via a string of length 0xffffffff, which triggers a heap-based buffer overflow.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8615",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8615"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8615&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "A flaw was found in curl before version 7.51. If cookie state is written into a cookie jar file that is later read back and used for subsequent requests, a malicious HTTP server can inject new cookies for arbitrary domains into said cookie jar.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8616",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8616"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8616&vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "A flaw was found in curl before version 7.51.0 When re-using a connection, curl was doing case insensitive comparisons of user name and password with the existing connections. This means that if an unused connection with proper credentials exists for a protocol that has connection-scoped credentials, an attacker can cause that connection to be reused if s/he knows the case-insensitive version of the correct password.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8617",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8617"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8617&vector=CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 7,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The base64 encode function in curl before version 7.51.0 is prone to a buffer being under allocated in 32bit systems if it receives at least 1Gb as input via `CURLOPT_USERNAME`.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8618",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8618"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8618&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The libcurl API function called `curl_maprintf()` before version 7.51.0 can be tricked into doing a double-free due to an unsafe `size_t` multiplication, on systems using 32 bit `size_t` variables.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8619",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8619"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8619&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The function `read_data()` in security.c in curl before version 7.51.0 is vulnerable to memory double free.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8620",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8620"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8620&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The 'globbing' feature in curl before version 7.51.0 has a flaw that leads to integer overflow and out-of-bounds read via user controlled input.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8621",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8621"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8621&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "The `curl_getdate` function in curl before version 7.51.0 is vulnerable to an out of bounds read if it receives an input with one digit short.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8622",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8622"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8622&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The URL percent-encoding decode function in libcurl before 7.51.0 is called `curl_easy_unescape`. Internally, even if this function would be made to allocate a unscape destination buffer larger than 2GB, it would return that new length in a signed 32 bit integer variable, thus the length would get either just truncated or both truncated and turned negative. That could then lead to libcurl writing outside of its heap based buffer.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8623",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8623"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8623&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "A flaw was found in curl before version 7.51.0. The way curl handles cookies permits other threads to trigger a use-after-free leading to information disclosure.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8624",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8624"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8624&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "curl before version 7.51.0 doesn't parse the authority component of the URL correctly when the host name part ends with a '#' character, and could instead be tricked into connecting to a different host. This may have security implications if you for example use an URL parser that follows the RFC to check for allowed domains before using curl to request them.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8625",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8625"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8625&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "curl before version 7.51.0 uses outdated IDNA 2003 standard to handle International Domain Names and this may lead users to potentially and unknowingly issue network transfer requests to the wrong host.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-9586",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-9586"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-9586&vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 8.1,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "curl before version 7.52.0 is vulnerable to a buffer overflow when doing a large floating point output in libcurl's implementation of the printf() functions. If there are any application that accepts a format string from the outside without necessary input filtering, it could allow remote attacks.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-9594",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-9594"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-9594&vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 8.1,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "curl before version 7.52.1 is vulnerable to an uninitialized random in libcurl's internal function that returns a good 32bit random value.  Having a weak or virtually non-existent random value makes the operations that use it vulnerable.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-9952",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-9952"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-9952&vector=CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 8.1,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The verify_certificate function in lib/vtls/schannel.c in libcurl 7.30.0 through 7.51.0, when built for Windows CE using the schannel TLS backend, makes it easier for remote attackers to conduct man-in-the-middle attacks via a crafted wildcard SAN in a server certificate, as demonstrated by \"*.com.\"",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-9953",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-9953"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-9953&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The verify_certificate function in lib/vtls/schannel.c in libcurl 7.30.0 through 7.51.0, when built for Windows CE using the schannel TLS backend, allows remote attackers to obtain sensitive information, cause a denial of service (crash), or possibly have unspecified other impact via a wildcard certificate name, which triggers an out-of-bounds read.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-1000100",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000100"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-1000100&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 6.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "When doing a TFTP transfer and curl/libcurl is given a URL that contains a very long file name (longer than about 515 bytes), the file name is truncated to fit within the buffer boundaries, but the buffer size is still wrongly updated to use the untruncated length. This too large value is then used in the sendto() call, making curl attempt to send more data than what is actually put into the buffer. The endto() function will then read beyond the end of the heap based buffer. A malicious HTTP(S) server could redirect a vulnerable libcurl-using client to a crafted TFTP URL (if the client hasn't restricted which protocols it allows redirects to) and trick it to send private memory contents to a remote server over UDP. Limit curl's redirect protocols with --proto-redir and libcurl's with CURLOPT_REDIR_PROTOCOLS.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-1000254",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000254"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-1000254&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "libcurl may read outside of a heap allocated buffer when doing FTP. When libcurl connects to an FTP server and successfully logs in (anonymous or not), it asks the server for the current directory with the `PWD` command. The server then responds with a 257 response containing the path, inside double quotes. The returned path name is then kept by libcurl for subsequent uses. Due to a flaw in the string parser for this directory name, a directory name passed like this but without a closing double quote would lead to libcurl not adding a trailing NUL byte to the buffer holding the name. When libcurl would then later access the string, it could read beyond the allocated heap buffer and crash or wrongly access data beyond the buffer, thinking it was part of the path. A malicious server could abuse this fact and effectively prevent libcurl-based clients to work with it - the PWD command is always issued on new FTP connections and the mistake has a high chance of causing a segfault. The simple fact that this has issue remained undiscovered for this long could suggest that malformed PWD responses are rare in benign servers. We are not aware of any exploit of this flaw. This bug was introduced in commit [415d2e7cb7](https://github.com/curl/curl/commit/415d2e7cb7), March 2005. In libcurl version 7.56.0, the parser always zero terminates the string but also rejects it if not terminated properly with a final double quote.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-1000257",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000257"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-1000257&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H&version=3.1"
+               },
+               "score": 9.1,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+            }
+         ],
+         "description": "An IMAP FETCH response line indicates the size of the returned data, in number of bytes. When that response says the data is zero bytes, libcurl would pass on that (non-existing) data with a pointer and the size (zero) to the deliver-data function. libcurl's deliver-data function treats zero as a magic number and invokes strlen() on the data to figure out the length. The strlen() is called on a heap based buffer that might not be zero terminated so libcurl might read beyond the end of it into whatever memory lies after (or just crash) and then deliver that to the application as if it was actually downloaded.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-2629",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-2629"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-2629&vector=CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 6.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "curl before 7.53.0 has an incorrect TLS Certificate Status Request extension feature that asks for a fresh proof of the server's certificate's validity in the code that checks for a test success or failure. It ends up always thinking there's valid proof, even when there is none or if the server doesn't support the TLS extension in question. This could lead to users not detecting when a server's certificate goes invalid or otherwise be mislead that the server is in a better shape than it is in reality. This flaw also exists in the command line tool (--cert-status).",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-7407",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-7407"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-7407&vector=CVSS:3.0/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 2.4,
+               "severity": "low",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "The ourWriteOut function in tool_writeout.c in curl 7.53.1 might allow physically proximate attackers to obtain sensitive information from process memory in opportunistic circumstances by reading a workstation screen during use of a --write-out argument ending in a '%' character, which leads to a heap-based buffer over-read.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-8817",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-8817"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-8817&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The FTP wildcard function in curl and libcurl before 7.57.0 allows remote attackers to cause a denial of service (out-of-bounds read and application crash) or possibly have unspecified other impact via a string that ends with an '[' character.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-9502",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-9502"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-9502&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L&version=3.1"
+               },
+               "score": 5.3,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            }
+         ],
+         "description": "In curl before 7.54.1 on Windows and DOS, libcurl's default protocol function, which is the logic that allows an application to set which protocol libcurl should attempt to use when given a URL without a scheme part, had a flaw that could lead to it overwriting a heap based memory buffer with seven bytes. If the default protocol is specified to be FILE or a file: URL lacks two slashes, the given \"URL\" starts with a drive letter, and libcurl is built for Windows or DOS, then libcurl would copy the path 7 bytes off, so that the end of the given path would write beyond the malloc buffer (7 bytes being the length in bytes of the ascii string \"file://\").",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2018-1000007",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000007"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2018-1000007&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "libcurl 7.1 through 7.57.0 might accidentally leak authentication data to third parties. When asked to send custom headers in its HTTP requests, libcurl will send that set of headers first to the host in the initial URL but also, if asked to follow redirects and a 30X HTTP response code is returned, to the host mentioned in URL in the `Location:` response header value. Sending the same set of headers to subsequent hosts is in particular a problem for applications that pass on custom `Authorization:` headers, as this header often contains privacy sensitive information or data that could allow others to impersonate the libcurl-using client's request.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2018-1000120",
+         "source": {
+            "name": "OSV",
+            "url": "https://osv.dev/list?ecosystem=&q=CVE-2018-1000120"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2018-1000120&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "curl FTP path confusion leads to NIL byte out of bounds write",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2018-1000121",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000121"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2018-1000121&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "A NULL pointer dereference exists in curl 7.21.0 to and including curl 7.58.0 in the LDAP code that allows an attacker to cause a denial of service",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2018-1000122",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000122"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2018-1000122&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H&version=3.1"
+               },
+               "score": 9.1,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+            }
+         ],
+         "description": "A buffer over-read exists in curl 7.20.0 to and including curl 7.58.0 in the RTSP+RTP handling code that allows an attacker to cause a denial of service or information leakage",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2018-1000301",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000301"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2018-1000301&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H&version=3.1"
+               },
+               "score": 9.1,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+            }
+         ],
+         "description": "curl version curl 7.20.0 to and including curl 7.59.0 contains a CWE-126: Buffer Over-read vulnerability in denial of service that can result in curl can be tricked into reading data beyond the end of a heap based buffer used to store downloaded RTSP content.. This vulnerability appears to have been fixed in curl < 7.20.0 and curl >= 7.60.0.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2018-14618",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14618"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2018-14618&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "curl before version 7.61.1 is vulnerable to a buffer overrun in the NTLM authentication code. The internal function Curl_ntlm_core_mk_nt_hash multiplies the length of the password by two (SUM) to figure out how large temporary storage area to allocate from the heap. The length value is then subsequently used to iterate over the password and generate output into the allocated storage buffer. On systems with a 32 bit size_t, the math to calculate SUM triggers an integer overflow when the password length exceeds 2GB (2^31 bytes). This integer overflow usually causes a very small buffer to actually get allocated instead of the intended very huge one, making the use of that buffer end up in a heap buffer overflow. (This bug is almost identical to CVE-2017-8816.)",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2018-16842",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-16842"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2018-16842&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H&version=3.1"
+               },
+               "score": 9.1,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+            }
+         ],
+         "description": "Curl versions 7.14.1 through 7.61.1 are vulnerable to a heap-based buffer over-read in the tool_msgs.c:voutf() function that may result in information exposure and denial of service.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2019-5436",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-5436"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2019-5436&vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 7.8,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "A heap buffer overflow in the TFTP receiving code allows for DoS or arbitrary code execution in libcurl versions 7.19.4 through 7.64.1.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2019-5443",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-5443"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2019-5443&vector=CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 7.8,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "A non-privileged user or program can put code and a config file in a known non-privileged path (under C:/usr/local/) that will make curl <= 7.65.1 automatically run the code (as an openssl \"engine\") on invocation. If that curl is invoked by a privileged user it can do anything it wants.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2019-5482",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-5482"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2019-5482&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "Heap buffer overflow in the TFTP protocol handler in cURL 7.19.4 to 7.65.3.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2020-8177",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8177"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2020-8177&vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 7.8,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "curl 7.20.0 through 7.70.0 is vulnerable to improper restriction of names for files and other resources that can lead too overwriting a local file when the -J flag is used.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2020-8231",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8231"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2020-8231&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "Due to use of a dangling pointer, libcurl 7.29.0 through 7.71.1 can use the wrong connection when sending data.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2020-8284",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8284"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2020-8284&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 3.7,
+               "severity": "low",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "A malicious server can use the FTP PASV response to trick curl 7.73.0 and earlier into connecting back to a given IP address and port, and this way potentially make curl extract information about services that are otherwise private and not disclosed, for example doing port scanning and service banner extractions.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2020-8285",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8285"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2020-8285&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "curl 7.21.0 to and including 7.73.0 is vulnerable to uncontrolled recursion due to a stack overflow issue in FTP wildcard match parsing.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22876",
+         "source": {
+            "name": "OSV",
+            "url": "https://osv.dev/list?ecosystem=&q=CVE-2021-22876"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22876&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 3.7,
+               "severity": "low",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "Moderate: curl security and bug fix update",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22898",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22898"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22898&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 3.1,
+               "severity": "low",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "curl 7.7 through 7.76.1 suffers from an information disclosure when the `-t` command line option, known as `CURLOPT_TELNETOPTIONS` in libcurl, is used to send variable=content pairs to TELNET servers. Due to a flaw in the option parser for sending NEW_ENV variables, libcurl could be made to pass on uninitialized data from a stack based buffer to the server, resulting in potentially revealing sensitive internal information to the server using a clear-text network protocol.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22922",
+         "source": {
+            "name": "OSV",
+            "url": "https://osv.dev/list?ecosystem=&q=CVE-2021-22922"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22922&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 6.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "Moderate: curl security update",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22923",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22923"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22923&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.3,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "When curl is instructed to get content using the metalink feature, and a user name and password are used to download the metalink XML file, those same credentials are then subsequently passed on to each of the servers from which curl will download or try to download the contents from. Often contrary to the user's expectations and intentions and without telling the user it happened.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22924",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22924"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22924&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 3.7,
+               "severity": "low",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse, if one of them matches the setup.Due to errors in the logic, the config matching function did not take 'issuercert' into account and it compared the involved paths *case insensitively*,which could lead to libcurl reusing wrong connections.File paths are, or can be, case sensitive on many systems but not all, and caneven vary depending on used file systems.The comparison also didn't include the 'issuer cert' which a transfer can setto qualify how to verify the server certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22925",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22925"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22925&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 5.3,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "curl supports the `-t` command line option, known as `CURLOPT_TELNETOPTIONS`in libcurl. This rarely used option is used to send variable=content pairs toTELNET servers.Due to flaw in the option parser for sending `NEW_ENV` variables, libcurlcould be made to pass on uninitialized data from a stack based buffer to theserver. Therefore potentially revealing sensitive internal information to theserver using a clear-text network protocol.This could happen because curl did not call and use sscanf() correctly whenparsing the string provided by the application.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22946",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22946"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22946&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22947",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22947"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22947&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not flush the in-queue of cached responses but instead continue using and trustingthe responses it got *before* the TLS handshake as if they were authenticated.Using this flaw, it allows a Man-In-The-Middle attacker to first inject the fake responses, then pass-through the TLS traffic from the legitimate server and trick curl into sending data back to the user thinking the attacker's injected data comes from the TLS-protected server.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-27774",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-27774"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-27774&vector=CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.7,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "An insufficiently protected credentials vulnerability exists in curl 4.9 to and include curl 7.82.0 are affected that could allow an attacker to extract credentials when follows HTTP(S) redirects is used with authentication could leak credentials to other services that exist on different protocols or port numbers.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-27776",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-27776"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-27776&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 6.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "A insufficiently protected credentials vulnerability in fixed in curl 7.83.0 might leak authentication or cookie header data on HTTP redirects to the same host but another port number.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-27781",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-27781"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-27781&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "libcurl provides the `CURLOPT_CERTINFO` option to allow applications torequest details to be returned about a server's certificate chain.Due to an erroneous function, a malicious server could make libcurl built withNSS get stuck in a never-ending busy-loop when trying to retrieve thatinformation.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-27782",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-27782"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-27782&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse if one of them matches the setup. However, several TLS andSSH settings were left out from the configuration match checks, making themmatch too easily.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-32206",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-32206"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-32206&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 6.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "curl < 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-32208",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-32208"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-32208&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "When curl < 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-32221",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-32221"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-32221&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-35252",
+         "source": {
+            "name": "OSV",
+            "url": "https://osv.dev/list?ecosystem=&q=CVE-2022-35252"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2022-35252&vector=unknown&version=2.0"
+               },
+               "score": "unknown",
+               "severity": "unknown",
+               "method": "CVSSvunknown",
+               "vector": "unknown"
+            }
+         ],
+         "description": "Low: curl security update",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2022-43552",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-43552"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2022-43552&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "A use after free vulnerability exists in curl <7.87.0. Curl can be asked to *tunnel* virtually all protocols it supports through an HTTP proxy. HTTP proxies can (and often do) deny such tunnel operations. When getting denied to tunnel the specific protocols SMB or TELNET, curl would use a heap-allocated struct after it had been freed, in its transfer shutdown code path.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-27533",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27533"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-27533&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 8.8,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "A vulnerability in input validation exists in curl <8.0 during communication using the TELNET protocol may allow an attacker to pass on maliciously crafted user name and \"telnet options\" during server negotiation. The lack of proper input scrubbing allows an attacker to send content or perform option negotiation without the application's intent. This vulnerability could be exploited if an application allows user input, thereby enabling attackers to execute arbitrary code on the system.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-27534",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27534"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-27534&vector=CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 8.8,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "A path traversal vulnerability exists in curl <8.0.0 SFTP implementation causes the tilde (~) character to be wrongly replaced when used as a prefix in the first path element, in addition to its intended use as the first element to indicate a path relative to the user's home directory. Attackers can exploit this flaw to bypass filtering or execute arbitrary code by crafting a path like /~2/foo while accessing a server with a specific user.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-27535",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27535"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-27535&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "An authentication bypass vulnerability exists in libcurl <8.0.0 in the FTP connection reuse feature that can result in wrong credentials being used during subsequent transfers. Previously created connections are kept in a connection pool for reuse if they match the current setup. However, certain FTP settings such as CURLOPT_FTP_ACCOUNT, CURLOPT_FTP_ALTERNATIVE_TO_USER, CURLOPT_FTP_SSL_CCC, and CURLOPT_USE_SSL were not included in the configuration match checks, causing them to match too easily. This could lead to libcurl using the wrong credentials when performing a transfer, potentially allowing unauthorized access to sensitive information.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-27536",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27536"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-27536&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "An authentication bypass vulnerability exists libcurl <8.0.0 in the connection reuse feature which can reuse previously established connections with incorrect user permissions due to a failure to check for changes in the CURLOPT_GSSAPI_DELEGATION option. This vulnerability affects krb5/kerberos/negotiate/GSSAPI transfers and could potentially result in unauthorized access to sensitive information. The safest option is to not reuse connections if the CURLOPT_GSSAPI_DELEGATION option has been changed.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-27538",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27538"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-27538&vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "An authentication bypass vulnerability exists in libcurl prior to v8.0.0 where it reuses a previously established SSH connection despite the fact that an SSH option was modified, which should have prevented reuse. libcurl maintains a pool of previously used connections to reuse them for subsequent transfers if the configurations match. However, two SSH settings were omitted from the configuration check, allowing them to match easily, potentially leading to the reuse of an inappropriate connection.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-28319",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28319"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-28319&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "A use after free vulnerability exists in curl <v8.1.0 in the way libcurl offers a feature to verify an SSH server's public key using a SHA 256 hash. When this check fails, libcurl would free the memory for the fingerprint before it returns an error message containing the (now freed) hash. This flaw risks inserting sensitive heap-based data into the error message that might be shown to users or otherwise get leaked and revealed.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-28320",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28320"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-28320&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "A denial of service vulnerability exists in curl <v8.1.0 in the way libcurl provides several different backends for resolving host names, selected at build time. If it is built to use the synchronous resolver, it allows name resolves to time-out slow operations using `alarm()` and `siglongjmp()`. When doing this, libcurl used a global buffer that was not mutex protected and a multi-threaded application might therefore crash or otherwise misbehave.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-28321",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28321"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-28321&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "An improper certificate validation vulnerability exists in curl <v8.1.0 in the way it supports matching of wildcard patterns when listed as \"Subject Alternative Name\" in TLS server certificates. curl can be built to use its own name matching function for TLS rather than one provided by a TLS library. This private wildcard matching function would match IDN (International Domain Name) hosts incorrectly and could as a result accept patterns that otherwise should mismatch. IDN hostnames are converted to puny code before used for certificate checks. Puny coded names always start with `xn--` and should not be allowed to pattern match, but the wildcard check in curl could still check for `x*`, which would match even though the IDN name most likely contained nothing even resembling an `x`.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-28322",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28322"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-28322&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 3.7,
+               "severity": "low",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "An information disclosure vulnerability exists in curl <v8.1.0 when doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously wasused to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the second transfer. The problem exists in the logic for a reused handle when it is (expected to be) changed from a PUT to a POST.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#curl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2013-4545",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4545"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2013-4545&vector=AV:N/AC:M/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 4.3,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.18.0 through 7.32.0, when built with OpenSSL, disables the certificate CN and SAN name field verification (CURLOPT_SSL_VERIFYHOST) when the digital signature verification (CURLOPT_SSL_VERIFYPEER) is disabled, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2013-6422",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-6422"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2013-6422&vector=AV:N/AC:H/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 4,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "The GnuTLS backend in libcurl 7.21.4 through 7.33.0, when disabling digital signature verification (CURLOPT_SSL_VERIFYPEER), also disables the CURLOPT_SSL_VERIFYHOST check for CN or SAN host name fields, which makes it easier for remote attackers to spoof servers and conduct man-in-the-middle (MITM) attacks.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-0015",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0015"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-0015&vector=AV:N/AC:H/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 4,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.10.6 through 7.34.0, when more than one authentication method is enabled, re-uses NTLM connections, which might allow context-dependent attackers to authenticate as other users via a request.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-0138",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0138"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-0138&vector=AV:N/AC:L/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 6.4,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "The default configuration in cURL and libcurl 7.10.6 before 7.36.0 re-uses (1) SCP, (2) SFTP, (3) POP3, (4) POP3S, (5) IMAP, (6) IMAPS, (7) SMTP, (8) SMTPS, (9) LDAP, and (10) LDAPS connections, which might allow context-dependent attackers to connect as other users via a request, a similar issue to CVE-2014-0015.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-0139",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0139"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-0139&vector=AV:N/AC:M/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 5.8,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.1 before 7.36.0, when using the OpenSSL, axtls, qsossl or gskit libraries for TLS, recognize a wildcard IP address in the subject's Common Name (CN) field of an X.509 certificate, which might allow man-in-the-middle attackers to spoof arbitrary SSL servers via a crafted certificate issued by a legitimate Certification Authority.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-2522",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-2522"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-2522&vector=AV:N/AC:H/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 4,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "curl and libcurl 7.27.0 through 7.35.0, when running on Windows and using the SChannel/Winssl TLS backend, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate when accessing a URL that uses a numerical IP address, which allows man-in-the-middle attackers to spoof servers via an arbitrary valid certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-3613",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3613"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-3613&vector=AV:N/AC:L/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl before 7.38.0 does not properly handle IP addresses in cookie domain names, which allows remote attackers to set cookies for or send arbitrary cookies to certain sites, as demonstrated by a site at 192.168.0.1 setting cookies for a site at 127.168.0.1.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-3620",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3620"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-3620&vector=AV:N/AC:L/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl before 7.38.0 allow remote attackers to bypass the Same Origin Policy and set cookies for arbitrary sites by setting a cookie for a top-level domain.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-3707",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3707"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-3707&vector=AV:N/AC:M/Au:N/C:P/I:N/A:N&version=2.0"
+               },
+               "score": 4.3,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+            }
+         ],
+         "description": "The curl_easy_duphandle function in libcurl 7.17.1 through 7.38.0, when running with the CURLOPT_COPYPOSTFIELDS option, does not properly copy HTTP POST data for an easy handle, which triggers an out-of-bounds read that allows remote web servers to read sensitive memory information.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-8150",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-8150"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-8150&vector=AV:N/AC:M/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 4.3,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "CRLF injection vulnerability in libcurl 6.0 through 7.x before 7.40.0, when using an HTTP proxy, allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via CRLF sequences in a URL.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2014-8151",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-8151"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2014-8151&vector=AV:N/AC:M/Au:N/C:P/I:P/A:N&version=2.0"
+               },
+               "score": 5.8,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+            }
+         ],
+         "description": "The darwinssl_connect_step1 function in lib/vtls/curl_darwinssl.c in libcurl 7.31.0 through 7.39.0, when using the DarwinSSL (aka SecureTransport) back-end for TLS, does not check if a cached TLS session validated the certificate when reusing the session, which allows man-in-the-middle attackers to spoof servers via a crafted certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2015-3143",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3143"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2015-3143&vector=AV:N/AC:L/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.10.6 through 7.41.0 does not properly re-use NTLM connections, which allows remote attackers to connect as other users via an unauthenticated request, a similar issue to CVE-2014-0015.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2015-3145",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3145"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2015-3145&vector=AV:N/AC:L/Au:N/C:P/I:P/A:P&version=2.0"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+            }
+         ],
+         "description": "The sanitize_cookie_path function in cURL and libcurl 7.31.0 through 7.41.0 does not properly calculate an index, which allows remote attackers to cause a denial of service (out-of-bounds write and crash) or possibly have other unspecified impact via a cookie path containing only a double-quote character.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2015-3148",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3148"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2015-3148&vector=AV:N/AC:L/Au:N/C:N/I:P/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+            }
+         ],
+         "description": "cURL and libcurl 7.10.6 through 7.41.0 do not properly re-use authenticated Negotiate connections, which allows remote attackers to connect as other users via a request.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2015-3153",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3153"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?name=CVE-2015-3153&vector=AV:N/AC:L/Au:N/C:P/I:N/A:N&version=2.0"
+               },
+               "score": 5,
+               "severity": "medium",
+               "method": "CVSSv2",
+               "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+            }
+         ],
+         "description": "The default configuration for cURL and libcurl before 7.42.1 sends custom HTTP headers to both the proxy and destination server, which might allow remote proxy servers to obtain sensitive information by reading the header contents.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-5419",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-5419"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-5419&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "curl and libcurl before 7.50.1 do not prevent TLS session resumption when the client certificate has changed, which allows remote attackers to bypass intended restrictions by resuming a session.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-5420",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-5420"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-5420&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "curl and libcurl before 7.50.1 do not check the client certificate when choosing the TLS connection to reuse, which might allow remote attackers to hijack the authentication of the connection by leveraging a previously created connection with a different client certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-5421",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-5421"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-5421&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 8.1,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "Use-after-free vulnerability in libcurl before 7.50.1 allows attackers to control which connection is used or possibly have unspecified other impact via unknown vectors.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-7141",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-7141"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-7141&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+            }
+         ],
+         "description": "curl and libcurl before 7.50.2, when built with NSS and the libnsspem.so library is available at runtime, allow remote attackers to hijack the authentication of a TLS connection by leveraging reuse of a previously loaded client certificate from file for a connection for which no certificate has been set, a different vulnerability than CVE-2016-5420.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-7167",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-7167"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-7167&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "Multiple integer overflows in the (1) curl_escape, (2) curl_easy_escape, (3) curl_unescape, and (4) curl_easy_unescape functions in libcurl before 7.50.3 allow attackers to have unspecified impact via a string of length 0xffffffff, which triggers a heap-based buffer overflow.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2016-8622",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-8622"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2016-8622&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The URL percent-encoding decode function in libcurl before 7.51.0 is called `curl_easy_unescape`. Internally, even if this function would be made to allocate a unscape destination buffer larger than 2GB, it would return that new length in a signed 32 bit integer variable, thus the length would get either just truncated or both truncated and turned negative. That could then lead to libcurl writing outside of its heap based buffer.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-1000100",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000100"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-1000100&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 6.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "When doing a TFTP transfer and curl/libcurl is given a URL that contains a very long file name (longer than about 515 bytes), the file name is truncated to fit within the buffer boundaries, but the buffer size is still wrongly updated to use the untruncated length. This too large value is then used in the sendto() call, making curl attempt to send more data than what is actually put into the buffer. The endto() function will then read beyond the end of the heap based buffer. A malicious HTTP(S) server could redirect a vulnerable libcurl-using client to a crafted TFTP URL (if the client hasn't restricted which protocols it allows redirects to) and trick it to send private memory contents to a remote server over UDP. Limit curl's redirect protocols with --proto-redir and libcurl's with CURLOPT_REDIR_PROTOCOLS.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-1000254",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000254"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-1000254&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "libcurl may read outside of a heap allocated buffer when doing FTP. When libcurl connects to an FTP server and successfully logs in (anonymous or not), it asks the server for the current directory with the `PWD` command. The server then responds with a 257 response containing the path, inside double quotes. The returned path name is then kept by libcurl for subsequent uses. Due to a flaw in the string parser for this directory name, a directory name passed like this but without a closing double quote would lead to libcurl not adding a trailing NUL byte to the buffer holding the name. When libcurl would then later access the string, it could read beyond the allocated heap buffer and crash or wrongly access data beyond the buffer, thinking it was part of the path. A malicious server could abuse this fact and effectively prevent libcurl-based clients to work with it - the PWD command is always issued on new FTP connections and the mistake has a high chance of causing a segfault. The simple fact that this has issue remained undiscovered for this long could suggest that malformed PWD responses are rare in benign servers. We are not aware of any exploit of this flaw. This bug was introduced in commit [415d2e7cb7](https://github.com/curl/curl/commit/415d2e7cb7), March 2005. In libcurl version 7.56.0, the parser always zero terminates the string but also rejects it if not terminated properly with a final double quote.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-1000257",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000257"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-1000257&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H&version=3.1"
+               },
+               "score": 9.1,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+            }
+         ],
+         "description": "An IMAP FETCH response line indicates the size of the returned data, in number of bytes. When that response says the data is zero bytes, libcurl would pass on that (non-existing) data with a pointer and the size (zero) to the deliver-data function. libcurl's deliver-data function treats zero as a magic number and invokes strlen() on the data to figure out the length. The strlen() is called on a heap based buffer that might not be zero terminated so libcurl might read beyond the end of it into whatever memory lies after (or just crash) and then deliver that to the application as if it was actually downloaded.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2017-8817",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-8817"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2017-8817&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "The FTP wildcard function in curl and libcurl before 7.57.0 allows remote attackers to cause a denial of service (out-of-bounds read and application crash) or possibly have unspecified other impact via a string that ends with an '[' character.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2018-14618",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14618"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2018-14618&vector=CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 9.8,
+               "severity": "critical",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "curl before version 7.61.1 is vulnerable to a buffer overrun in the NTLM authentication code. The internal function Curl_ntlm_core_mk_nt_hash multiplies the length of the password by two (SUM) to figure out how large temporary storage area to allocate from the heap. The length value is then subsequently used to iterate over the password and generate output into the allocated storage buffer. On systems with a 32 bit size_t, the math to calculate SUM triggers an integer overflow when the password length exceeds 2GB (2^31 bytes). This integer overflow usually causes a very small buffer to actually get allocated instead of the intended very huge one, making the use of that buffer end up in a heap buffer overflow. (This bug is almost identical to CVE-2017-8816.)",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2019-5436",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-5436"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2019-5436&vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&version=3.1"
+               },
+               "score": 7.8,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+            }
+         ],
+         "description": "A heap buffer overflow in the TFTP receiving code allows for DoS or arbitrary code execution in libcurl versions 7.19.4 through 7.64.1.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2020-8231",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8231"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2020-8231&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "Due to use of a dangling pointer, libcurl 7.29.0 through 7.71.1 can use the wrong connection when sending data.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2020-8285",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8285"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2020-8285&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&version=3.1"
+               },
+               "score": 7.5,
+               "severity": "high",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+         ],
+         "description": "curl 7.21.0 to and including 7.73.0 is vulnerable to uncontrolled recursion due to a stack overflow issue in FTP wildcard match parsing.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22876",
+         "source": {
+            "name": "OSV",
+            "url": "https://osv.dev/list?ecosystem=&q=CVE-2021-22876"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22876&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 3.7,
+               "severity": "low",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "Moderate: curl security and bug fix update",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2021-22924",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22924"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22924&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N&version=3.1"
+               },
+               "score": 3.7,
+               "severity": "low",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+         ],
+         "description": "libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse, if one of them matches the setup.Due to errors in the logic, the config matching function did not take 'issuercert' into account and it compared the involved paths *case insensitively*,which could lead to libcurl reusing wrong connections.File paths are, or can be, case sensitive on many systems but not all, and caneven vary depending on used file systems.The comparison also didn't include the 'issuer cert' which a transfer can setto qualify how to verify the server certificate.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-27535",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27535"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-27535&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "An authentication bypass vulnerability exists in libcurl <8.0.0 in the FTP connection reuse feature that can result in wrong credentials being used during subsequent transfers. Previously created connections are kept in a connection pool for reuse if they match the current setup. However, certain FTP settings such as CURLOPT_FTP_ACCOUNT, CURLOPT_FTP_ALTERNATIVE_TO_USER, CURLOPT_FTP_SSL_CCC, and CURLOPT_USE_SSL were not included in the configuration match checks, causing them to match too easily. This could lead to libcurl using the wrong credentials when performing a transfer, potentially allowing unauthorized access to sensitive information.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-27536",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27536"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-27536&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.9,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "An authentication bypass vulnerability exists libcurl <8.0.0 in the connection reuse feature which can reuse previously established connections with incorrect user permissions due to a failure to check for changes in the CURLOPT_GSSAPI_DELEGATION option. This vulnerability affects krb5/kerberos/negotiate/GSSAPI transfers and could potentially result in unauthorized access to sensitive information. The safest option is to not reuse connections if the CURLOPT_GSSAPI_DELEGATION option has been changed.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      },
+      {
+         "id": "CVE-2023-27538",
+         "source": {
+            "name": "NVD",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27538"
+         },
+         "ratings": [
+            {
+               "source": {
+                  "name": "NVD",
+                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-27538&vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N&version=3.1"
+               },
+               "score": 5.5,
+               "severity": "medium",
+               "method": "CVSSv3",
+               "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+            }
+         ],
+         "description": "An authentication bypass vulnerability exists in libcurl prior to v8.0.0 where it reuses a previously established SSH connection despite the fact that an SSH option was modified, which should have prevented reuse. libcurl maintains a pool of previously used connections to reuse them for subsequent transfers if the configurations match. However, two SSH settings were omitted from the configuration check, allowing them to match easily, potentially leading to the reuse of an inappropriate connection.",
+         "recommendation": "",
+         "advisories": [],
+         "created": "NOT_KNOWN",
+         "published": "NOT_KNOWN",
+         "updated": "",
+         "analysis": {
+            "state": "in_triage",
+            "response": [],
+            "detail": "NewFound"
+         },
+         "affects": [
+            {
+               "ref": "urn:cbt:1/haxx#libcurl-7.32.0"
+            }
+         ]
+      }
+   ]
+}

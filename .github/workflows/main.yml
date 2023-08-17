@@ -22,3 +22,4 @@ jobs:
           sbom_type: spdx
           sbom_format: json
           alerts_based_on_file: false
+          triage_input_file: abc.json
