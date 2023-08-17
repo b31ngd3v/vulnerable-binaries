@@ -28,9 +28,9 @@
          "published": "NOT_KNOWN",
          "updated": "",
          "analysis": {
-            "state": "in_triage",
+            "state": "not_affected",
             "response": [],
-            "detail": "NewFound"
+            "detail": ""
          },
          "affects": [
             {
