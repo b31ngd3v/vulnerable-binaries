@@ -15,7 +15,7 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     steps:
-      - uses: b31ngd3v/cve-bin-tool-action@sbom_scanner
+      - uses: b31ngd3v/cve-bin-tool-action@triage_input
         with:
           nvd_api_key: '${{ secrets.NVD_API_KEY }}'
           exclude_dir: binary
