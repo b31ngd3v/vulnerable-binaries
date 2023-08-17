@@ -15,11 +15,10 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     steps:
-      - uses: intel/cve-bin-tool-action@main
+      - uses: b31ngd3v/cve-bin-tool-action@triage_input
         with:
           nvd_api_key: '${{ secrets.NVD_API_KEY }}'
           exclude_dir: binary
           sbom_type: spdx
           sbom_format: json
           alerts_based_on_file: false
-          triage_input_file: abc.json
