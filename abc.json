@@ -30,6 +30,7 @@
          "analysis": {
             "state": "not_affected",
             "response": [],
+            "justification": "",
             "detail": ""
          },
          "affects": [
@@ -44,18 +45,7 @@
             "name": "NVD",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-24031"
          },
-         "ratings": [
-            {
-               "source": {
-                  "name": "NVD",
-                  "url": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-24031&vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N&version=3.1"
-               },
-               "score": 5.5,
-               "severity": "medium",
-               "method": "CVSSv3",
-               "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
-            }
-         ],
+         "ratings": [],
          "description": "In the Zstandard command-line utility prior to v1.4.1, output files were created with default permissions. Correct file permissions (matching the input) would only be set at completion time. Output files could therefore be readable or writable to unintended parties.",
          "recommendation": "",
          "advisories": [],
